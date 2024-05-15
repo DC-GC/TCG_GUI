@@ -4,11 +4,19 @@ BoxLayoutSample:
     orientation: "vertical"
     Button:
         text: "1"
-        size_hint: .5, .5
+        size: "20dp", "40dp"
+        size_hint: None, None
+        pos_hint: {"right": .75}
 
     Button:
         text: "2"
-        size_hint: 1, 1
+        size: "60dp", "60dp"
+        size_hint: None, None
+        # possible pos hint options  
+        # x, center_x, right 
+        # y, center_y, top
+        # values should be from 0 -> 1
+        pos_hint: {"center_x": .5}
 
     Label:
         text: "3"
