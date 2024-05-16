@@ -1,12 +1,19 @@
 BoxLayoutSample:
 
 <BoxLayoutSample>:
-    orientation: "vertical"
-    Button:
-        text: "1"
-        size: "20dp", "40dp"
-        size_hint: None, None
-        pos_hint: {"right": .75}
+    orientation: "horizontal"
+    BoxLayout:
+        size_hint: .25, 1
+        spacing: "10dp"
+        orientation: "vertical"
+        Label:
+            text: "Temporary App"
+        Button:
+            text: "Option 1"
+        Button:
+            text: "Option 2"
+        Button:
+            text: "Option 3"
 
     Button:
         text: "2"
