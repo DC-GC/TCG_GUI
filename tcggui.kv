@@ -25,42 +25,75 @@ BoxLayoutSample:
         # values should be from 0 -> 1
         # pos_hint: {"center_x": .5}
 
-    AnchorLayout
+    # AnchorLayout
         # anchor positioning options [anchor_x, anchor_y]
         # anchor positioning values [right, left, center]
-        BoxLayout:
-            orientation: "horizontal"
+        # BoxLayout:
+            # orientation: "horizontal"
+            # Label:
+            #     size_hint: .25, 1
+            #     text: "3"
+            # Button:
+            #     size_hint: .25, 1
+            #     text: "Info 1"
+            # Button:
+            #     size_hint: .25, 1
+            #     text: "Info 2"
+            # Button:
+            #     text: "Info 3"
+            #     size_hint: .25, 1
+    BoxLayout:
+        orientation: "vertical"
+        GridLayout:
+            cols: 5
+            size_hint: 1, .05
             Label:
-                size_hint: .25, 1
-                text: "3"
-            Button:
-                size_hint: .25, 1
-                text: "Info 1"
-            Button:
-                size_hint: .25, 1
-                text: "Info 2"
-            Button:
-                text: "Info 3"
-                size_hint: .25, 1
-
-    GridLayout:
-        rows: 2
-        cols: 2
-        Button:
-            text: "Info 3"
-            size_hint: .25, 1
-        Button:
-            text: "Info 3"
-            size_hint: .25, 1
-        Button:
-            text: "Info 3"
-            size_hint: .25, 1
-        Button:
-            text: "Info 3"
-            size_hint: .25, 1
-        Button:
-            text: "Info 3"
-            size_hint: .25, 1
+                text: "column 1"
+            Label:
+                text: "column 2"
+            Label:
+                text: "column 3"
+            Label:
+                text: "column 4"
+            Label:
+                text: "column 5"
+        ScrollView:
+            GridLayout:
+              
+                rows: 10
+                size_hint: 1,2
+                Button:
+                    text: "Info 1"
+                Button:
+                    text: "Info 2"
+                GridLayout:
+                    cols: 5
+                    Label:
+                        text: "column 1"
+                    Label:
+                        text: "column 2"
+                    Label:
+                        text: "column 3"
+                    Label:
+                        text: "column 4"
+                    Label:
+                        text: "column 5"
+                Button:
+                    text: "Info 4"
+                Button:
+                    text: "Info 5"
+                Button:
+                    text: "Info 6"
+                Button:
+                    text: "Info 7"
+                Button:
+                    text: "Info 8"
+                Button:
+                    text: "Info 9"
+                Button:
+                    text: "Info 10"
+                  
+        
 
    
 
