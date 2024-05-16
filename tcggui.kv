@@ -15,15 +15,15 @@ BoxLayoutSample:
         Button:
             text: "Option 3"
 
-    Button:
-        text: "2"
-        size: "60dp", "60dp"
-        size_hint: None, None
+    # Button:
+        # text: "2"
+        # size: "60dp", "60dp"
+        # size_hint: None, None
         # possible pos hint options  
         # x, center_x, right 
         # y, center_y, top
         # values should be from 0 -> 1
-        pos_hint: {"center_x": .5}
+        # pos_hint: {"center_x": .5}
 
     AnchorLayout
         # anchor positioning options [anchor_x, anchor_y]
@@ -34,7 +34,6 @@ BoxLayoutSample:
                 size_hint: .25, 1
                 text: "3"
             Button:
-                
                 size_hint: .25, 1
                 text: "Info 1"
             Button:
@@ -43,6 +42,26 @@ BoxLayoutSample:
             Button:
                 text: "Info 3"
                 size_hint: .25, 1
+
+    GridLayout:
+        rows: 2
+        cols: 2
+        Button:
+            text: "Info 3"
+            size_hint: .25, 1
+        Button:
+            text: "Info 3"
+            size_hint: .25, 1
+        Button:
+            text: "Info 3"
+            size_hint: .25, 1
+        Button:
+            text: "Info 3"
+            size_hint: .25, 1
+        Button:
+            text: "Info 3"
+            size_hint: .25, 1
+
    
 
 <MainWidget>:
