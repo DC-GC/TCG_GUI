@@ -25,8 +25,24 @@ BoxLayoutSample:
         # values should be from 0 -> 1
         pos_hint: {"center_x": .5}
 
-    Label:
-        text: "3"
+    AnchorLayout
+        # anchor positioning options [anchor_x, anchor_y]
+        # anchor positioning values [right, left, center]
+        BoxLayout:
+            orientation: "horizontal"
+            Label:
+                size_hint: .25, 1
+                text: "3"
+            Button:
+                
+                size_hint: .25, 1
+                text: "Info 1"
+            Button:
+                size_hint: .25, 1
+                text: "Info 2"
+            Button:
+                text: "Info 3"
+                size_hint: .25, 1
    
 
 <MainWidget>:
