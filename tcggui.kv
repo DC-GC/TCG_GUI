@@ -1,6 +1,6 @@
-BoxLayoutSample:
+MainWidget:
 
-<BoxLayoutSample>:
+<MainWidget>:
     orientation: "horizontal"
     BoxLayout:
         size_hint: .25, 1
@@ -48,57 +48,61 @@ BoxLayoutSample:
             cols: 5
             size_hint: 1, .05
             Label:
-                text: "column 1"
+                text: "Name"
             Label:
-                text: "column 2"
+                text: "Type"
             Label:
-                text: "column 3"
+                text: "Attack"
             Label:
-                text: "column 4"
+                text: "Defense"
             Label:
-                text: "column 5"
+                text: "Skill"
         ScrollView:
             GridLayout:
               
                 rows: 10
-                size_hint: 1,2
-                Button:
-                    text: "Info 1"
-                Button:
-                    text: "Info 2"
-                GridLayout:
-                    cols: 5
-                    Label:
-                        text: "column 1"
-                    Label:
-                        text: "column 2"
-                    Label:
-                        text: "column 3"
-                    Label:
-                        text: "column 4"
-                    Label:
-                        text: "column 5"
-                Button:
-                    text: "Info 4"
-                Button:
-                    text: "Info 5"
-                Button:
-                    text: "Info 6"
-                Button:
-                    text: "Info 7"
-                Button:
-                    text: "Info 8"
-                Button:
-                    text: "Info 9"
-                Button:
-                    text: "Info 10"
+                size_hint: 1,2     
+                CardEntry:
+                CardEntry:
+                CardEntry:
+                CardEntry:
+                CardEntry:
+                CardEntry:
+                CardEntry:
+                CardEntry:
+                CardEntry:
+                CardEntry:
                   
-        
 
+<CardEntry>:    
+    BoxLayout:
+        padding: "1dp"
+        orientation: "horizontal"
+        Button:
+            text: "Picture"
+            size_hint: .25, 1
+        BoxLayout:
+            orientation: "vertical"
+            BoxLayout:
+                orientation: "horizontal"
+                size_hint: 1, .25
+                Button:
+                    text: "Name"
+                    size_hint: .7, 1
+                Button:
+                    text: "Type"
+                    size_hint: .15, 1
+                Button:
+                    text: "Rating"
+                    size_hint: .15, 1
+            Button:
+                text: "Effect"
+                size_hint: 1, .7
+            BoxLayout:
+                orientation: "horizontal"
+                size_hint: 1, .25
+                Button:
+                    text: "Attack"
+                Button:
+                    text: "Defense"
    
-
-<MainWidget>:
-    Button:
-        text: "temp"
-        size: "20dp", "40dp"
-        pos: "20dp", "40dp"

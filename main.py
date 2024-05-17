@@ -8,7 +8,8 @@ from kivy.uix.button import Button
 
 class AnchorLayoutExample(AnchorLayout):
     pass
-
+class CardEntry(BoxLayout):
+    pass
 
 class BoxLayoutSample(BoxLayout):
     pass
@@ -20,7 +21,7 @@ class BoxLayoutSample(BoxLayout):
     #     self.add_widget(button2)
     #     self.orientation = "vertical"
 
-class MainWidget(Widget):
+class MainWidget(BoxLayout):
     pass
 
 class TcgGuiApp(App):
