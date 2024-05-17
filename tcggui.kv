@@ -1,4 +1,19 @@
-MainWidget:
+
+MDBoxLayout:
+    orientation: "vertical"
+
+    MDTopAppBar:
+        title: "Navigation Drawer"
+        left_action_items: [["menu", lambda x: app.callback()]]
+            
+    MDLabel:
+        text: "Content"
+        halign: "center"
+
+            
+            
+
+# MainWidget:
 
 <MainWidget>:
     orientation: "horizontal"
@@ -34,19 +49,6 @@ MainWidget:
             #     size_hint: .25, 1
     BoxLayout:
         orientation: "vertical"
-        GridLayout:
-            cols: 5
-            size_hint: 1, .05
-            Label:
-                text: "Name"
-            Label:
-                text: "Type"
-            Label:
-                text: "Attack"
-            Label:
-                text: "Defense"
-            Label:
-                text: "Skill"
         ScrollView:
             GridLayout:
               
@@ -102,9 +104,13 @@ MainWidget:
         orientation: "vertical"
         Label:
             text: "Temporary App - Bar"
-        Button:
-            text: "Option 1"
-            on_press: root.onButtonClick()
+        GridLayout:
+            rows: 2
+            Label:
+                size_hint: 1, .1
+                text: "Search:"
+            TextInput:
+                size_hint: 1, .9
         Switch:
             text: "0"
         ToggleButton:

@@ -6,6 +6,7 @@ from kivy.uix.scrollview import ScrollView
 from kivy.uix.gridlayout import GridLayout
 from kivy.uix.button import Button
 from kivy.properties import StringProperty
+from kivymd.app import MDApp
 
 class AnchorLayoutExample(AnchorLayout):
     pass
@@ -35,7 +36,7 @@ class BoxLayoutSample(BoxLayout):
 class MainWidget(BoxLayout):
     pass
 
-class TcgGuiApp(App):
+class TcgGuiApp(MDApp):
     pass
 
 TcgGuiApp().run()
