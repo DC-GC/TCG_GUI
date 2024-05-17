@@ -17,6 +17,10 @@ class NavBar(BoxLayout):
     def onButtonClick(self):
         print("hello World")
         self.temp = "hehehe"
+    def onToggleClick(self, widget):
+        if (widget.state == "normal"): widget.text = "0"
+        else: widget.text = "1"
+        print("Toggle state changed")
 
 class BoxLayoutSample(BoxLayout):
     pass

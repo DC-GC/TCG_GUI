@@ -105,7 +105,8 @@ MainWidget:
         Button:
             text: "Option 1"
             on_press: root.onButtonClick()
-        Button:
-            text: root.temp
-        Button:
-            text: "Option 3"
+        Switch:
+            text: "0"
+        ToggleButton:
+            text: "0"
+            on_state: root.onToggleClick(self)
