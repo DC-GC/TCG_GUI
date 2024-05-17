@@ -2,18 +2,8 @@ MainWidget:
 
 <MainWidget>:
     orientation: "horizontal"
-    BoxLayout:
+    NavBar:
         size_hint: .25, 1
-        spacing: "10dp"
-        orientation: "vertical"
-        Label:
-            text: "Temporary App"
-        Button:
-            text: "Option 1"
-        Button:
-            text: "Option 2"
-        Button:
-            text: "Option 3"
 
     # Button:
         # text: "2"
@@ -105,4 +95,17 @@ MainWidget:
                     text: "Attack"
                 Button:
                     text: "Defense"
-   
+
+<NavBar>:
+    BoxLayout:
+        spacing: "10dp"
+        orientation: "vertical"
+        Label:
+            text: "Temporary App - Bar"
+        Button:
+            text: "Option 1"
+            on_press: root.onButtonClick()
+        Button:
+            text: root.temp
+        Button:
+            text: "Option 3"

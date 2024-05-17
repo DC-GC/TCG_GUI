@@ -5,11 +5,18 @@ from kivy.uix.anchorlayout import AnchorLayout
 from kivy.uix.scrollview import ScrollView
 from kivy.uix.gridlayout import GridLayout
 from kivy.uix.button import Button
+from kivy.properties import StringProperty
 
 class AnchorLayoutExample(AnchorLayout):
     pass
 class CardEntry(BoxLayout):
     pass
+
+class NavBar(BoxLayout):
+    temp = StringProperty("Temp")
+    def onButtonClick(self):
+        print("hello World")
+        self.temp = "hehehe"
 
 class BoxLayoutSample(BoxLayout):
     pass
